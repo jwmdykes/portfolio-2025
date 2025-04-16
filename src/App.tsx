@@ -7,6 +7,7 @@ import {
   RightArrow,
   DownChevron,
   ReactLogo,
+  Database,
 } from './Icons';
 import { ContactForm } from './ContactForm';
 import { Nav } from './Nav';
@@ -193,17 +194,24 @@ function App() {
         <section className="mt-60 container mx-auto px-8">
           <SectionHeader>My Favourite Tools</SectionHeader>
           <div className="grid grid-cols-3 gap-4">
-            <div className="hover:border-neutral-500 col-span-2 bg-neutral-800 aspect-video p-4 rounded-2xl border border-neutral-700 grid grid-cols-2 transition-all duration-300">
+            <div className="hover:border-neutral-500 col-span-2 bg-neutral-800 aspect-video p-5 rounded-2xl border border-neutral-700 grid grid-cols-2 transition-all duration-100">
               <h3>React JS</h3>
               <ReactLogo className="justify-self-center self-center h-4/5 fill-neutral-700 stroke-3 stroke-neutral-600"></ReactLogo>
             </div>
-            <div className="hover:border-neutral-500 transition-all duration-300 col-span-1 bg-neutral-800 rounded-2xl border border-neutral-700 p-4">
-              PostgreSQL
+            <div className="hover:border-neutral-500 transition-all duration-100 col-span-1 bg-neutral-800 rounded-2xl border border-neutral-700 p-5">
+              <h3 className="flex gap-2 items-center justify-start font-medium">
+                <Database className="w-6 fill-accent stroke-none"></Database>
+                PostgreSQL
+              </h3>
+              <p className="mt-4 text-sm">My SQL database of choice</p>
+              <p className="mt-1 text-sm text-neutral-400">
+                Used by LangPanel, alongside the postgres provider Supabase.
+              </p>
             </div>
-            <div className="hover:border-neutral-500 transition-all duration-300 col-span-1 bg-neutral-800 rounded-2xl border border-neutral-700 p-4">
+            <div className="hover:border-neutral-500 transition-all duration-100 col-span-1 bg-neutral-800 rounded-2xl border border-neutral-700 p-5">
               Tailwind CSS
             </div>
-            <div className="hover:border-neutral-500 transition-all duration-300 col-span-2 bg-neutral-800 aspect-video rounded-2xl border border-neutral-700 p-4">
+            <div className="hover:border-neutral-500 transition-all duration-100 col-span-2 bg-neutral-800 aspect-video rounded-2xl border border-neutral-700 p-5">
               PyTorch
             </div>
           </div>
