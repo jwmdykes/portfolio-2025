@@ -12,4 +12,5 @@
   --color-icon-bg: hsl(0, 0%, 24%);
   --color-icon-fill-focus: hsl(133, 100%, 76%);
   --color-accent: hsl(134, 100%, 73%);
+  --color-muted-accent: hsl(134, 48%, 69%);
 }
