@@ -6,6 +6,7 @@ import {
   Envelope,
   RightArrow,
   DownChevron,
+  ReactLogo,
 } from './Icons';
 import { ContactForm } from './ContactForm';
 import { Nav } from './Nav';
@@ -192,10 +193,19 @@ function App() {
         <section className="mt-60 container mx-auto px-8">
           <SectionHeader>My Favourite Tools</SectionHeader>
           <div className="grid grid-cols-3 gap-4">
-            <div className="col-span-2 bg-neutral-600 aspect-video">abc</div>
-            <div className="col-span-1 bg-neutral-500">abc</div>
-            <div className="col-span-1 bg-neutral-500">abc</div>
-            <div className="col-span-2 bg-neutral-600 aspect-video">abc</div>
+            <div className="hover:border-neutral-500 col-span-2 bg-neutral-800 aspect-video p-4 rounded-2xl border border-neutral-700 grid grid-cols-2 transition-all duration-300">
+              <h3>React JS</h3>
+              <ReactLogo className="justify-self-center self-center h-4/5 fill-neutral-700 stroke-3 stroke-neutral-600"></ReactLogo>
+            </div>
+            <div className="hover:border-neutral-500 transition-all duration-300 col-span-1 bg-neutral-800 rounded-2xl border border-neutral-700 p-4">
+              PostgreSQL
+            </div>
+            <div className="hover:border-neutral-500 transition-all duration-300 col-span-1 bg-neutral-800 rounded-2xl border border-neutral-700 p-4">
+              Tailwind CSS
+            </div>
+            <div className="hover:border-neutral-500 transition-all duration-300 col-span-2 bg-neutral-800 aspect-video rounded-2xl border border-neutral-700 p-4">
+              PyTorch
+            </div>
           </div>
         </section>
 
