@@ -1,4 +1,4 @@
-import { CV, Folder, Home, Blog, Bomb, Gear } from './Icons';
+import { CV, Folder, Home, Blog, Gear } from './Icons';
 
 export function Nav() {
   return (
@@ -38,15 +38,6 @@ export function Nav() {
         >
           <Blog className="fill-icon-fill w-[1.85rem]"></Blog>
           Blog
-        </a>
-
-        <a
-          href="#"
-          className="text-white flex flex-col items-center"
-          aria-label="Link To Home Page"
-        >
-          <Bomb className="fill-icon-fill w-8"></Bomb>
-          Explode!
         </a>
       </div>
       <div className="flex flex-col items-center">
