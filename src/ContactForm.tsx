@@ -71,7 +71,7 @@ export function ContactForm() {
       </div>
       <button
         type="submit"
-        className="hover:cursor-pointer py-3 px-5 text-sm font-medium text-center text-black rounded-lg bg-accent hover:brightness-90 active:brightness-80  transition-all duration-300"
+        className="hover:cursor-pointer py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-icon-fill-focus accent hover:brightness-90 active:brightness-80  transition-all duration-300"
       >
         Send Message
       </button>

@@ -1,52 +1,52 @@
-import { CV, Folder, Home, Blog, Gear } from './Icons';
+import { Folder, Home } from './Icons';
 
 export function Nav() {
   return (
-    <nav className="h-dvh col-span-1 row-span-1 flex flex-col justify-between border-r border-border py-8 text-[11px] font-semibold tracking-wide">
-      <div className="grow flex flex-col gap-7">
-        <a
-          href="#"
-          className="text-white flex flex-col items-center"
-          aria-label="Link To Home Page"
-        >
-          <Home className="fill-icon-fill-focus w-[1.7rem]"></Home>
-          Home
-        </a>
+    <nav className="bg-bg-top sticky top-0 flex flex-col justify-between border-b border-border px-6 py-4 font-semibold tracking-wide">
+      <div className="grow flex justify-between">
+        <div className="flex gap-7">
+          <a
+            href="#"
+            className="text-white flex items-center gap-2"
+            aria-label="Link To Home Page"
+          >
+            <Home className="fill-icon-fill-focus w-[1.4rem]"></Home>
+            Home
+          </a>
 
-        <a
-          href="#"
-          className="text-white flex flex-col items-center"
-          aria-label="Link To Projects Archive"
-        >
-          <Folder className="fill-icon-fill w-7"></Folder>
-          Projects
-        </a>
+          <a
+            href="#"
+            className="text-white flex items-center gap-2"
+            aria-label="Link To Projects Archive"
+          >
+            <Folder className="fill-icon-fill w-6"></Folder>
+            Projects
+          </a>
+        </div>
 
-        <a
-          href="#"
-          className="text-white flex flex-col items-center"
-          aria-label="Link To Download Resume"
-        >
-          <CV className="fill-icon-fill w-[1.85rem]"></CV>
-          Resume
-        </a>
-
-        <a
-          href="#"
-          className="text-white flex flex-col items-center"
-          aria-label="Link To Blog"
-        >
-          <Blog className="fill-icon-fill w-[1.85rem]"></Blog>
-          Blog
-        </a>
-      </div>
-      <div className="flex flex-col items-center">
-        <button
-          className="text-white flex flex-col items-center hover:cursor-pointer bg-transparent hover:bg-icon-bg p-2 translate-y-2 rounded-xl group"
-          aria-label="Open Settings"
-        >
-          <Gear className="fill-icon-fill w-8 group-hover:rotate-90 transition-all duration-500"></Gear>
-        </button>
+        <div className="flex gap-7 items-center">
+          <a
+            href="#"
+            className="text-white flex  items-center gap-2"
+            aria-label="Link To Blog"
+          >
+            View Blog
+          </a>
+          <a
+            href="#"
+            className="text-white flex  items-center gap-2"
+            aria-label="Link To Blog"
+          >
+            Socials
+          </a>
+          <a
+            href="#"
+            className="text-white flex  items-center gap-2"
+            aria-label="Link To Download Resume"
+          >
+            Download CV
+          </a>
+        </div>
       </div>
     </nav>
   );

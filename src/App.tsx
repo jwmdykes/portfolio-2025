@@ -31,19 +31,19 @@ function SectionHeader({ children, className, ...rest }: ComponentProps<'h2'>) {
 
 function App() {
   return (
-    <div className="h-dvh bg-linear-to-b from-bg-top to-bg-bottom grid grid-cols-[78px_1fr] grid-rows-1">
+    <div className="bg-linear-to-b from-bg-top to-bg-bottom">
       <Nav />
-      <article className="row-span-1 col-start-2 overflow-y-scroll">
-        <section className="h-dvh container mx-auto  grid grid-cols-2 px-8">
-          <div className="flex flex-col self-center">
+      <article className="row-span-1 col-start-2 ">
+        <section className="h-dvh container mx-auto grid px-8">
+          <div className="flex flex-col self-center items-center">
             <h1 className="text-white text-6xl mb-4 font-semibold tracking-wide">
               John Dykes
             </h1>
             <h2 className="text-neutral-300 text-2xl mb-5">
-              Full Stack Web Developer
+              Full Stack Web and AI Developer
             </h2>
 
-            <hr className="h-1 bg-accent mb-16 border-none rounded-[1px] w-[min(21rem,100%)]" />
+            <hr className="h-1 bg-accent mb-8 border-none rounded-[1px] w-[min(21rem,100%)]" />
 
             <ul className="flex items-center gap-4 fill-white">
               <li>
@@ -60,7 +60,6 @@ function App() {
               </li>
             </ul>
           </div>
-          <div></div>
         </section>
 
         <section className="mt-16 text-white flex flex-col mx-auto max-w-[1472px]">
