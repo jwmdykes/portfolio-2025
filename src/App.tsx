@@ -86,7 +86,15 @@ function App() {
             <div className="grow">
               <ol className="grid grid-cols-1 gap-10">
                 <li className="">
-                  <h3 className="text-xl font-medium">LangPanel</h3>
+                  <h3 className="text-xl font-medium">
+                    <a
+                      href="https://langpanel.com"
+                      className="flex gap-2 group"
+                    >
+                      LangPanel
+                      <RightArrow className="w-4 fill-white group-hover:fill-accent group-hover:translate-x-1 translate-y-[1px] transition-all duration-300"></RightArrow>
+                    </a>
+                  </h3>
                   <h4 className="text-lg text-neutral-300 font-light mb-2">
                     Founder / May 2024 &mdash; Present
                   </h4>
@@ -95,7 +103,8 @@ function App() {
                       Developing AI powered translation application for comics
                     </li>
                     <li className="before:w-2 before:aspect-square before:bg-accent before:rounded-full flex items-center gap-2">
-                      Custom AIs run in the browser with WebGPU, reducing costs
+                      Custom AI models run in the browser with WebGPU, reducing
+                      costs
                     </li>
                   </ul>
                 </li>
@@ -132,6 +141,29 @@ function App() {
                     </li>
                     <li className="before:w-2 before:aspect-square before:bg-accent before:rounded-full flex items-center gap-2">
                       Other top secret cryptographic research
+                    </li>
+                  </ul>
+                </li>
+
+                <li className="">
+                  <h3 className="text-xl font-medium">
+                    University of Waterloo
+                  </h3>
+                  <h4 className="text-lg text-neutral-300 font-light mb-2">
+                    Graduate Student / January 2019 &mdash; December 2019
+                  </h4>
+                  <ul className="text-neutral-200">
+                    <li className="before:w-2 before:aspect-square before:bg-accent before:rounded-full flex items-center gap-2">
+                      Master's degree program in mathematics
+                    </li>
+                    <li className="before:w-2 before:aspect-square before:bg-accent before:rounded-full flex items-center gap-2">
+                      Studied analytic number theory with
+                      <a
+                        href="https://uwaterloo.ca/pure-mathematics/yu-ru-liu"
+                        className="underline underline-offset-2 decoration-white decoration-1 hover:decoration-accent transition-all duration-300"
+                      >
+                        Professor Yu-Ru Liu
+                      </a>
                     </li>
                   </ul>
                 </li>
