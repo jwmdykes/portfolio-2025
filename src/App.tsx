@@ -66,7 +66,12 @@ function App() {
         <section className="mt-16 text-white flex flex-col mx-auto max-w-[1472px]">
           <SectionHeader>Featured Projects</SectionHeader>
           <ul className="grow grid grid-cols-2 gap-2 px-2">
-            <li className="bg-neutral-600 aspect-video">First Project</li>
+            <li className="bg-neutral-600 aspect-video rounded-xl overflow-hidden">
+              <img
+                src="/langpanel.webp"
+                alt="LangPanel Project Thumbnail Image"
+              />
+            </li>
             <li className="bg-neutral-600 aspect-video">Second Project</li>
             <li className="bg-neutral-600 aspect-video">Third Project</li>
             <li className="bg-neutral-600 aspect-video">Fourth Project</li>
