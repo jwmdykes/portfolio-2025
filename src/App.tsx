@@ -79,10 +79,10 @@ function App() {
           </div>
         </section>
 
-        <section className="mt-60 container mx-auto px-8 flex flex-col w-[min(100%,770px)]">
+        <section className="mt-60 container mx-auto px-8 flex flex-col w-[min(100%,900px)]">
           <SectionHeader>Recent Experience</SectionHeader>
 
-          <div className="flex w-full">
+          <div className="flex w-full gap-6">
             <div className="grow">
               <ol className="grid grid-cols-1 gap-10">
                 <li className="">
@@ -103,8 +103,11 @@ function App() {
                       Developing AI powered translation application for comics
                     </li>
                     <li className="before:w-2 before:aspect-square before:bg-accent before:rounded-full flex items-center gap-2">
-                      Custom AI models run in the browser with WebGPU, reducing
-                      costs
+                      OCR AI model designed and trained using pytorch and
+                      proprietary text rendering library.
+                    </li>
+                    <li className="before:w-2 before:aspect-square before:bg-accent before:rounded-full flex items-center gap-2">
+                      Models run in the browser with WebGPU, reducing costs
                     </li>
                   </ul>
                 </li>
@@ -188,15 +191,18 @@ function App() {
         <section className="mt-60 container mx-auto px-8">
           <SectionHeader>My Favourite Tools</SectionHeader>
           <div className="grid grid-cols-3 gap-4">
-            <div className="col-span-2 bg-neutral-600 h-80">abc</div>
+            <div className="col-span-2 bg-neutral-600 aspect-video">abc</div>
             <div className="col-span-1 bg-neutral-500">abc</div>
-            <div className="col-span-1 bg-neutral-500 h-80">abc</div>
-            <div className="col-span-2 bg-neutral-600">abc</div>
+            <div className="col-span-1 bg-neutral-500">abc</div>
+            <div className="col-span-2 bg-neutral-600 aspect-video">abc</div>
           </div>
         </section>
 
         <section className="mt-60 container mx-auto px-8">
           <SectionHeader>Something Cool</SectionHeader>
+          <div className="font-mono mx-auto w-full aspect-video bg-black rounded-2xl p-4">
+            Test
+          </div>
         </section>
 
         <section className="mt-60 container mx-auto px-8">
