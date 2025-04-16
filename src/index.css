@@ -1,0 +1,15 @@
+@import 'tailwindcss';
+
+* {
+  color-scheme: dark;
+}
+
+@theme {
+  --color-bg-top: hsl(0, 0%, 10%);
+  --color-bg-bottom: hsl(0, 0%, 13%);
+  --color-border: hsl(0, 0%, 16%);
+  --color-icon-fill: hsl(0, 0%, 75%);
+  --color-icon-bg: hsl(0, 0%, 24%);
+  --color-icon-fill-focus: hsl(133, 100%, 76%);
+  --color-accent: hsl(134, 100%, 73%);
+}
