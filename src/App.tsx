@@ -34,7 +34,7 @@ function App() {
     <div className="bg-linear-to-b from-bg-top to-bg-bottom">
       <Nav />
       <article className="row-span-1 col-start-2 ">
-        <section className="h-dvh container mx-auto grid px-8">
+        <section className="h-[calc(100dvh-56.8px)] container mx-auto grid px-8">
           <div className="flex flex-col self-center items-center">
             <h1 className="text-white text-6xl mb-4 font-semibold tracking-wide">
               John Dykes
