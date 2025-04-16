@@ -11,6 +11,7 @@ import { ContactForm } from './ContactForm';
 import { Nav } from './Nav';
 import { Footer } from './Footer';
 import { twMerge } from 'tailwind-merge';
+import { Terminal } from './Terminal';
 
 function SectionHeader({ children, className, ...rest }: ComponentProps<'h2'>) {
   return (
@@ -200,9 +201,7 @@ function App() {
 
         <section className="mt-60 container mx-auto px-8">
           <SectionHeader>Something Cool</SectionHeader>
-          <div className="font-mono mx-auto w-full aspect-video bg-black rounded-2xl p-4">
-            Test
-          </div>
+          <Terminal />
         </section>
 
         <section className="mt-60 container mx-auto px-8">

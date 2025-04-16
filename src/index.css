@@ -13,6 +13,8 @@
   --color-icon-fill-focus: hsl(133, 100%, 76%);
   --color-accent: hsl(134, 100%, 73%);
   --color-muted-accent: hsl(134, 48%, 69%);
+  --color-text-shadow: hsla(0, 0%, 100%, 0.362);
+  --color-monitor: hsl(120, 3%, 7%);
 
   --default-mono-font-family: 'Space Mono';
 }
