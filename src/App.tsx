@@ -221,7 +221,7 @@ function App() {
           </div>
         </section>
 
-        <section className="mt-60 container mx-auto px-8">
+        <section className="mt-60 container max-w-6xl mx-auto px-8">
           <SectionHeader>Something Cool</SectionHeader>
           <Terminal />
         </section>

@@ -36,7 +36,7 @@ export function Terminal() {
   return (
     <div
       ref={terminalRef}
-      className="shadow-lg text-lg font-mono mx-auto w-full aspect-video bg-monitor rounded-2xl p-4  overflow-y-auto flex flex-col justify-end max-h-[80vh]"
+      className="shadow-lg text-lg font-mono mx-auto w-full aspect-video bg-monitor rounded-2xl p-4 overflow-y-auto flex flex-col justify-end"
     >
       {lines.map((line, index) => (
         <p key={index}>{line}</p>
