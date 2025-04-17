@@ -79,14 +79,20 @@ function App() {
                 className="scale-100 translate-x-0 hover:scale-105 hover:-translate-x-2  hover:-translate-y-1 transition-all"
               />
             </li>
-            <li className="bg-neutral-600 aspect-video rounded-xl overflow-hidden">
+            <li className="bg-[#191f26] aspect-video rounded-xl overflow-hidden">
               <img
                 src="/web-synth.webp"
                 alt="WebAudio Synthesizer Project Thumbnail"
-                className="scale-100 translate-x-0 hover:scale-105 hover:-translate-x-2  hover:-translate-y-1 transition-all"
+                className="scale-100 translate-x-0 hover:scale-105 transition-all"
               />
             </li>
-            <li className="bg-neutral-600 aspect-video">Fourth Project</li>
+            <li className="bg-[#382370] aspect-video rounded-xl overflow-hidden">
+              <img
+                src="/coming-soon.webp"
+                alt="WebAudio Synthesizer Project Thumbnail"
+                className="scale-100 translate-x-0 hover:scale-105 transition-all"
+              />
+            </li>{' '}
           </ul>
           <div className="flex justify-end">
             <a
@@ -216,11 +222,13 @@ function App() {
               <ReactLogo className="justify-self-center self-center h-4/5 fill-neutral-700 stroke-3 stroke-neutral-600"></ReactLogo>
             </div>
             <div className="hover:border-neutral-500 transition-all duration-100 col-span-1 bg-neutral-800 rounded-2xl border border-neutral-700 p-5">
-              <h3 className="flex gap-2 items-center justify-start font-medium">
+              <h3 className="text-lg flex gap-2 items-center justify-start font-medium">
                 <Database className="w-6 fill-accent stroke-none"></Database>
                 PostgreSQL
               </h3>
-              <p className="mt-4 text-sm">My SQL database of choice</p>
+              <p className="mt-4 text-base text-neutral-100 ">
+                My SQL database of choice
+              </p>
               <p className="mt-1 text-sm text-neutral-400">
                 Used by LangPanel, alongside the postgres provider Supabase.
               </p>
