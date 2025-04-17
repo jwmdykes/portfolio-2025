@@ -41,17 +41,17 @@ function App() {
       <article className="row-span-1 col-start-2 relative overflow-hidden">
         <section className="h-[calc(100dvh-60px)] grid z-50">
           <div className="z-0 col-start-1 row-start-1 self-center justify-self-center relative">
-            <Stars className="absolute h-[calc(100dvh-60px)] -translate-y-1/2 -translate-x-1/2 fill-none stroke-accent stroke-3 [stroke-dasharray:0,299,0,0,0,0]"></Stars>
-            <Stars className="absolute h-[calc(100dvh-60px)] -translate-y-1/2 -translate-x-1/2 fill-none stroke-accent stroke-2 [stroke-dasharray:0,203,0,0,0,0]"></Stars>
-            <Stars className="absolute h-[calc(100dvh-60px)] -translate-y-1/2 -translate-x-1/2 fill-none stroke-accent stroke-1 [stroke-dasharray:0,100,0,0,0,0]"></Stars>
+            <Stars className="absolute h-[calc(100dvh)] -translate-y-1/2 -translate-x-1/2 fill-none stroke-accent stroke-3 [stroke-dasharray:0,299,0,0,0,0]"></Stars>
+            <Stars className="absolute h-[calc(100dvh)] -translate-y-1/2 -translate-x-1/2 fill-none stroke-accent stroke-2 [stroke-dasharray:0,203,0,0,0,0]"></Stars>
+            <Stars className="absolute h-[calc(100dvh)] -translate-y-1/2 -translate-x-1/2 fill-none stroke-accent stroke-1 [stroke-dasharray:0,100,0,0,0,0]"></Stars>
           </div>
           <div className="z-10 self-center justify-self-center col-start-1 row-start-1 h-[170px] aspect-[5/3] bg-radial from-bg-top from-70% to-transparent"></div>
-          <div className="col-start-1 row-start-1 z-10 self-end w-full h-32 bg-gradient-to-b from-transparent to-bg-top from-0% to-80%"></div>
+          <div className="col-start-1 row-start-1 z-10 self-end w-full h-16 bg-gradient-to-b from-transparent to-bg-top from-0% to-90% translate-y-[60px]"></div>
           <div className="z-20 col-start-1 row-start-1 flex flex-col self-center items-center container mx-auto px-4 sm:px-8">
-            <h1 className="text-white text-6xl mb-4 font-semibold tracking-wide">
+            <h1 className="text-white text-6xl mb-4 font-semibold tracking-wide text-center">
               John Dykes
             </h1>
-            <h2 className="text-neutral-300 text-2xl mb-5">
+            <h2 className="text-neutral-300 text-2xl mb-5 text-center">
               Full Stack Web and AI Developer
             </h2>
 
