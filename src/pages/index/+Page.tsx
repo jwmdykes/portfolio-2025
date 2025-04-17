@@ -18,7 +18,6 @@ import { ContactForm } from '../../components/ContactForm';
 import { Nav } from '../../components/Nav';
 import { Footer } from '../../components/Footer';
 import { twMerge } from 'tailwind-merge';
-import { Terminal } from '../../components/Terminal';
 
 function SectionHeader({ children, className, ...rest }: ComponentProps<'h2'>) {
   return (
@@ -321,11 +320,6 @@ export function Page() {
               </p>
             </div>
           </div>
-        </section>
-
-        <section className="mt-30 sm:mt-60 container max-w-5xl mx-auto px-2 sm:px-8">
-          <SectionHeader>Something Cool</SectionHeader>
-          <Terminal />
         </section>
 
         <section className="mt-30 sm:mt-60 container mx-auto px-2 sm:px-8">
