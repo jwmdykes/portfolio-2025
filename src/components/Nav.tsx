@@ -33,18 +33,11 @@ export function Nav() {
 
         <div className="gap-7 items-center text-sm hidden sm:flex">
           <a
-            href="#"
+            href="https://medium.com/@98johndykes"
             className="text-neutral-100 flex items-center gap-2 underline decoration-transparent underline-offset-2 hover:decoration-white transition-all"
             aria-label="Link To Blog"
           >
             View Blog
-          </a>
-          <a
-            href="#"
-            className="text-neutral-100 flex items-center gap-2 underline decoration-transparent underline-offset-2 hover:decoration-white transition-all"
-            aria-label="Link To Socials"
-          >
-            Socials
           </a>
           <a
             href="#"
@@ -70,22 +63,18 @@ export function Nav() {
         <>
           <div
             className="fixed top-0 left-0 h-dvh w-dvh"
-            onPointerDown={toggleMenu}
+            onPointerDown={(e) => {
+              e.preventDefault();
+              toggleMenu();
+            }}
           ></div>
           <div className="z-10 absolute top-[calc(100%+10px)] right-2 rounded-lg  bg-bg-top text-white py-4 flex flex-col items-end px-4 gap-4 border border-border">
             <a
-              href="#"
+              href="https://medium.com/@98johndykes"
               className="underline decoration-transparent underline-offset-2 hover:decoration-white transition-all"
               aria-label="Link To Blog"
             >
               View Blog
-            </a>
-            <a
-              href="#"
-              className="underline decoration-transparent underline-offset-2 hover:decoration-white transition-all"
-              aria-label="Link To Socials"
-            >
-              Socials
             </a>
             <a
               href="#"
