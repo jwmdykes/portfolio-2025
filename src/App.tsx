@@ -230,7 +230,7 @@ function App() {
           <SectionHeader>My Favourite Tools</SectionHeader>
           <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-5 md:grid-rows-3 lg:grid-rows-2">
             <div className="col-span-1 md:col-span-2 bg-neutral-800 aspect-video px-3 sm:px-5 py-5 sm:py-7 rounded-2xl border border-neutral-700 grid grid-cols-1 sm:grid-cols-2 overflow-x-clip">
-              <ReactLogo className="row-start-1 col-start-1 translate-x-1/2 sm:translate-x-0 justify-self-end sm:justify-self-center self-center h-11/12 fill-neutral-700 stroke-3 stroke-neutral-600"></ReactLogo>
+              <ReactLogo className="row-start-1 col-start-1 sm:col-start-2 translate-x-1/2 sm:translate-x-0 justify-self-end sm:justify-self-center self-center h-11/12 fill-neutral-700 stroke-3 stroke-neutral-600"></ReactLogo>
               <div className="z-10 row-start-1 col-start-1 flex flex-col justify-between gap-12 sm:gap-0">
                 <div>
                   <h3 className="text-xl flex gap-2 items-center justify-start font-medium">
