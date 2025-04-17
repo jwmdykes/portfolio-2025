@@ -1,4 +1,4 @@
-import { ComponentProps } from 'react';
+import React, { ComponentProps } from 'react';
 import {
   Youtube,
   Github,
@@ -8,6 +8,12 @@ import {
   DownChevron,
   ReactLogo,
   Database,
+  Web,
+  Checkmark,
+  Tailwind,
+  PyTorch,
+  Postgres,
+  Fastify,
 } from './Icons';
 import { ContactForm } from './ContactForm';
 import { Nav } from './Nav';
@@ -208,22 +214,51 @@ function App() {
               </ol>
             </div>
             <div className="grid">
-              <div className="justify-self-center row-start-1 col-start-1 w-[1px] rounded-full h-full bg-neutral-400"></div>
-              <div className="row-start-1 col-start-1 rounded-[2px] w-2 aspect-square bg-muted-accent" />
+              <div className="justify-self-center row-start-1 col-start-1 w-[1px] rounded-full h-full bg-neutral-300"></div>
+              <div className="row-start-1 col-start-1 rounded-[3px] w-2 aspect-square bg-accent" />
             </div>
           </div>
         </section>
 
-        <section className="mt-60 container max-w-6xl mx-auto px-8">
+        <section className="mt-60 container max-w-5xl mx-auto px-8">
           <SectionHeader>My Favourite Tools</SectionHeader>
-          <div className="grid grid-cols-3 gap-4">
-            <div className="hover:border-neutral-500 col-span-2 bg-neutral-800 aspect-video p-5 rounded-2xl border border-neutral-700 grid grid-cols-2 transition-all duration-100">
-              <h3>React JS</h3>
-              <ReactLogo className="justify-self-center self-center h-4/5 fill-neutral-700 stroke-3 stroke-neutral-600"></ReactLogo>
+          <div className="grid grid-cols-3 gap-4 grid-rows-2">
+            <div className="hover:border-neutral-500 col-span-2 bg-neutral-800 aspect-video px-5 py-7 rounded-2xl border border-neutral-700 grid grid-cols-2 transition-all duration-100">
+              <div className="flex flex-col justify-between">
+                <div>
+                  <h3 className="text-xl flex gap-2 items-center justify-start font-medium">
+                    <ReactLogo className="fill-react-blue w-7" />
+                    React JS
+                  </h3>
+                  <p className="mt-4 text-base text-neutral-100">
+                    For creating awesome web apps
+                  </p>
+                  <p className="mt-1 text-sm text-neutral-400">
+                    I use it for almost everything I make on the web, including
+                    this website!
+                  </p>
+                </div>
+
+                <ul className="flex flex-col text-sm gap-1">
+                  <li className="flex gap-1">
+                    <Checkmark className="w-[0.8rem] fill-white translate-y-[1px]" />
+                    <span>Over five years of experience</span>
+                  </li>
+                  <li className="flex gap-1">
+                    <Checkmark className="w-[0.8rem] fill-white translate-y-[1px]" />
+                    <span>Crafting lightning fast pages</span>
+                  </li>
+                  <li className="flex gap-1">
+                    <Checkmark className="w-[0.8rem] fill-white translate-y-[1px]" />
+                    <span>Making interactive web apps</span>
+                  </li>
+                </ul>
+              </div>
+              <ReactLogo className="justify-self-center self-center h-11/12 fill-neutral-700 stroke-3 stroke-neutral-600"></ReactLogo>
             </div>
-            <div className="hover:border-neutral-500 transition-all duration-100 col-span-1 bg-neutral-800 rounded-2xl border border-neutral-700 p-5">
-              <h3 className="text-lg flex gap-2 items-center justify-start font-medium">
-                <Database className="w-6 fill-accent stroke-none"></Database>
+            <div className="hover:border-neutral-500 transition-all duration-100 col-span-1 bg-neutral-800 rounded-2xl border border-neutral-700 px-5 py-7">
+              <h3 className="text-xl flex gap-2 items-center justify-start font-medium">
+                <Postgres className="w-7 h-7 stroke-[1px]"></Postgres>
                 PostgreSQL
               </h3>
               <p className="mt-4 text-base text-neutral-100 ">
@@ -233,16 +268,54 @@ function App() {
                 Used by LangPanel, alongside the postgres provider Supabase.
               </p>
             </div>
-            <div className="hover:border-neutral-500 transition-all duration-100 col-span-1 bg-neutral-800 rounded-2xl border border-neutral-700 p-5">
-              Tailwind CSS
+            <div className="hover:border-neutral-500 transition-all duration-100 col-span-1 bg-neutral-800 rounded-2xl border border-neutral-700 px-5 py-7">
+              <h3 className="text-xl flex gap-2 items-center justify-start font-medium">
+                <Tailwind className="w-6 fill-accent stroke-none"></Tailwind>
+                Tailwind CSS
+              </h3>
+              <p className="mt-4 text-base text-neutral-100 ">
+                Making everything look pretty
+              </p>
+              <p className="mt-1 text-sm text-neutral-400">
+                For my styling needs, I often go to Tailwind over plain CSS.
+              </p>
             </div>
-            <div className="hover:border-neutral-500 transition-all duration-100 col-span-2 bg-neutral-800 aspect-video rounded-2xl border border-neutral-700 p-5">
-              PyTorch
+            <div className="hover:border-neutral-500 transition-all duration-100 col-span-1 bg-neutral-800 rounded-2xl border border-neutral-700 px-5 py-7 ">
+              <h3 className="text-xl flex gap-2 items-center justify-start font-medium">
+                <PyTorch className="w-6  stroke-none"></PyTorch>
+                PyTorch
+              </h3>
+              <p className="mt-4 text-base text-neutral-100 ">
+                AI Powered Applications
+              </p>
+              <p className="mt-1 text-sm text-neutral-400">
+                Training custom AI models, or using existing ones with
+                <a
+                  href="https://huggingface.co/"
+                  className="ml-[0.7ch] text-neutral-200"
+                >
+                  Huggingface
+                </a>
+                .
+              </p>
+            </div>
+            <div className="hover:border-neutral-500 transition-all duration-100 col-span-1 bg-neutral-800 rounded-2xl border border-neutral-700 px-5 py-7">
+              <h3 className="text-xl flex gap-2 items-center justify-start font-medium">
+                <Fastify className="w-7 fill-white stroke-none"></Fastify>
+                Fastify
+              </h3>
+              <p className="mt-4 text-base text-neutral-100 ">
+                My go-to backend framework
+              </p>
+              <p className="mt-1 text-sm text-neutral-400">
+                Serverless is great, but sometimes you need a real backend. I
+                default to Fastify.
+              </p>
             </div>
           </div>
         </section>
 
-        <section className="mt-60 container max-w-6xl mx-auto px-8">
+        <section className="mt-60 container max-w-5xl mx-auto px-8">
           <SectionHeader>Something Cool</SectionHeader>
           <Terminal />
         </section>

@@ -1,5 +1,6 @@
 import { ComponentPropsWithoutRef } from 'react';
 import { twMerge } from 'tailwind-merge';
+import { Github } from './Icons';
 
 export function Footer({
   className,
@@ -8,12 +9,19 @@ export function Footer({
   return (
     <footer
       className={twMerge(
-        'flex justify-center py-8 text-lg text-neutral-300',
+        'flex justify-between px-4 py-4 text-base text-neutral-300 bg-bg-top',
         className
       )}
       {...props}
     >
-      © 2025 John Dykes
+      <span>© 2025 John Dykes</span>
+      <a
+        href="https://github.com/jwmdykes/portfolio-website"
+        className="flex gap-2 fill-neutral-300 hover:fill-white hover:text-white transition-all"
+      >
+        <Github className="w-5" />
+        Source Code
+      </a>
     </footer>
   );
 }
