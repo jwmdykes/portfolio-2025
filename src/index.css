@@ -17,5 +17,6 @@
   --color-monitor: hsl(120, 3%, 7%);
   --color-react-blue: hsl(207, 100%, 59%);
 
+  --default-font-family: 'Inter';
   --default-mono-font-family: 'Space Mono';
 }

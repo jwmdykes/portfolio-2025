@@ -4,7 +4,7 @@ export function Nav() {
   return (
     <nav className="z-50 bg-bg-top sticky top-0 flex flex-col justify-between border-b border-border px-6 py-4 font-semibold tracking-wide">
       <div className="grow flex justify-between">
-        <div className="flex gap-7">
+        <div className="flex gap-7 text-sm">
           <a
             href="#"
             className="text-white flex items-center gap-2 hover:brightness-90 transition-all"
@@ -20,11 +20,11 @@ export function Nav() {
             aria-label="Link To Projects Archive"
           >
             <Folder className="fill-icon-fill w-6"></Folder>
-            Projects
+            <span>Projects</span>
           </a>
         </div>
 
-        <div className="flex gap-7 items-center">
+        <div className="flex gap-7 items-center text-sm">
           <a
             href="#"
             className="text-neutral-100 flex items-center gap-2 underline decoration-transparent underline-offset-2 hover:decoration-white transition-all"

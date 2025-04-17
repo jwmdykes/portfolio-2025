@@ -23,7 +23,7 @@ function SectionHeader({ children, className, ...rest }: ComponentProps<'h2'>) {
   return (
     <h2
       className={twMerge(
-        'text-center text-5xl font-semibold tracking-wide mb-18',
+        'text-center text-6xl font-semibold tracking-wide mb-18',
         className
       )}
       {...rest}
@@ -125,10 +125,10 @@ function App() {
                       <RightArrow className="w-4 fill-white group-hover:fill-accent group-hover:translate-x-1 translate-y-[1px] transition-all duration-300"></RightArrow>
                     </a>
                   </h3>
-                  <h4 className="text-lg text-neutral-300 font-light mb-2">
+                  <h4 className="text-base text-neutral-300 font-light mb-2">
                     Founder / May 2024 &mdash; Present
                   </h4>
-                  <ul className="text-neutral-200">
+                  <ul className="text-neutral-200 flex flex-col gap-1">
                     <li className="before:w-2 before:aspect-square before:bg-accent before:rounded-full flex items-center gap-2">
                       Developing AI powered translation application for comics
                     </li>
@@ -146,10 +146,10 @@ function App() {
                   <h3 className="text-xl font-medium">
                     Communications Security Establishment
                   </h3>
-                  <h4 className="text-lg text-neutral-300 font-light mb-2">
+                  <h4 className="text-bas text-neutral-300 font-light mb-2">
                     Cryptanalyst / September 2020 &mdash; May 2024
                   </h4>
-                  <ul className="text-neutral-200">
+                  <ul className="text-neutral-200 flex flex-col gap-1">
                     <li className="before:w-2 before:aspect-square before:bg-accent before:rounded-full flex items-center gap-2">
                       Implementing, evaluating cryptographic standards and
                       algorithms
@@ -164,10 +164,10 @@ function App() {
                   <h3 className="text-xl font-medium">
                     Communications Research Centre Canada
                   </h3>
-                  <h4 className="text-lg text-neutral-300 font-light mb-2">
+                  <h4 className="text-base text-neutral-300 font-light mb-2">
                     Analyst / September 2019 &mdash; September 2020
                   </h4>
-                  <ul className="text-neutral-200">
+                  <ul className="text-neutral-200 flex flex-col gap-1">
                     <li className="before:w-2 before:aspect-square before:bg-accent before:rounded-full flex items-center gap-2">
                       Implementing, evaluating cryptographic standards and
                       algorithms
@@ -182,10 +182,10 @@ function App() {
                   <h3 className="text-xl font-medium">
                     University of Waterloo
                   </h3>
-                  <h4 className="text-lg text-neutral-300 font-light mb-2">
+                  <h4 className="text-base text-neutral-300 font-light mb-2">
                     Graduate Student / January 2019 &mdash; December 2019
                   </h4>
-                  <ul className="text-neutral-200">
+                  <ul className="text-neutral-200 flex flex-col gap-1">
                     <li className="before:w-2 before:aspect-square before:bg-accent before:rounded-full flex items-center gap-2">
                       Master's degree program in mathematics
                     </li>
