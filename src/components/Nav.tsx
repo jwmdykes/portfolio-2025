@@ -1,6 +1,13 @@
+import { useCallback, useState } from 'react';
 import { Folder, Hamburger, Home } from './Icons';
 
 export function Nav() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = useCallback(() => {
+    setIsMenuOpen((b) => !b);
+  }, []);
+
   return (
     <nav className="z-50 bg-bg-top sticky top-0 flex flex-col justify-between px-2 sm:px-6 h-[60px] font-semibold tracking-wide border-b border-border">
       <div className="grow flex justify-between">
@@ -35,7 +42,7 @@ export function Nav() {
           <a
             href="#"
             className="text-neutral-100 flex items-center gap-2 underline decoration-transparent underline-offset-2 hover:decoration-white transition-all"
-            aria-label="Link To Blog"
+            aria-label="Link To Socials"
           >
             Socials
           </a>
@@ -50,6 +57,7 @@ export function Nav() {
 
         <div className="sm:hidden flex items-center justify-center ">
           <button
+            onClick={toggleMenu}
             className="p-2 translate-x-2 hover:cursor-pointer hover:bg-neutral-800 rounded-xl"
             aria-label="Toggle Sidemenu button"
           >
@@ -57,6 +65,38 @@ export function Nav() {
           </button>
         </div>
       </div>
+
+      {isMenuOpen && (
+        <>
+          <div
+            className="fixed top-0 left-0 h-dvh w-dvh"
+            onPointerDown={toggleMenu}
+          ></div>
+          <div className="z-10 absolute top-[calc(100%+10px)] right-2 rounded-lg  bg-bg-top text-white py-4 flex flex-col items-end px-4 gap-4 border border-border">
+            <a
+              href="#"
+              className="underline decoration-transparent underline-offset-2 hover:decoration-white transition-all"
+              aria-label="Link To Blog"
+            >
+              View Blog
+            </a>
+            <a
+              href="#"
+              className="underline decoration-transparent underline-offset-2 hover:decoration-white transition-all"
+              aria-label="Link To Socials"
+            >
+              Socials
+            </a>
+            <a
+              href="#"
+              className="underline decoration-transparent underline-offset-2 hover:decoration-white transition-all"
+              aria-label="Link To Download Resume"
+            >
+              Download CV
+            </a>
+          </div>
+        </>
+      )}
     </nav>
   );
 }
