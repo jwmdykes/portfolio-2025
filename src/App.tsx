@@ -12,6 +12,7 @@ import {
   PyTorch,
   Postgres,
   Fastify,
+  Stars,
 } from './Icons';
 import { ContactForm } from './ContactForm';
 import { Nav } from './Nav';
@@ -35,11 +36,17 @@ function SectionHeader({ children, className, ...rest }: ComponentProps<'h2'>) {
 
 function App() {
   return (
-    <div className="bg-linear-to-b from-bg-top to-bg-bottom">
+    <div className="bg-bg-top">
       <Nav />
-      <article className="row-span-1 col-start-2 ">
-        <section className="h-[calc(100dvh-56.8px)] container mx-auto grid px-8">
-          <div className="flex flex-col self-center items-center">
+      <article className="row-span-1 col-start-2 relative overflow-hidden">
+        <section className="h-[calc(100dvh-56.8px)] grid z-50">
+          <div className="z-0 col-start-1 row-start-1 self-center justify-self-center relative">
+            <Stars className="absolute h-[calc(100dvh-56.8px)] -translate-y-1/2 -translate-x-1/2 fill-none stroke-accent stroke-3 [stroke-dasharray:0,299,0,0,0,0]"></Stars>
+            <Stars className="absolute h-[calc(100dvh-56.8px)] -translate-y-1/2 -translate-x-1/2 fill-none stroke-accent stroke-2 [stroke-dasharray:0,203,0,0,0,0]"></Stars>
+            <Stars className="absolute h-[calc(100dvh-56.8px)] -translate-y-1/2 -translate-x-1/2 fill-none stroke-accent stroke-1 [stroke-dasharray:0,100,0,0,0,0]"></Stars>
+          </div>
+          <div className="z-10 self-center justify-self-center col-start-1 row-start-1 h-[170px] aspect-[5/3] bg-radial from-bg-top from-70% to-transparent"></div>
+          <div className="z-20 col-start-1 row-start-1 flex flex-col self-center items-center container mx-auto px-8">
             <h1 className="text-white text-6xl mb-4 font-semibold tracking-wide">
               John Dykes
             </h1>

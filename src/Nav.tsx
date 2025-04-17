@@ -2,7 +2,7 @@ import { Folder, Home } from './Icons';
 
 export function Nav() {
   return (
-    <nav className="z-50 bg-bg-top sticky top-0 flex flex-col justify-between px-6 py-4 font-semibold tracking-wide">
+    <nav className="z-50 bg-bg-top sticky top-0 flex flex-col justify-between px-6 py-4 font-semibold tracking-wide border-b border-border">
       <div className="grow flex justify-between">
         <div className="flex gap-7 text-sm">
           <a
