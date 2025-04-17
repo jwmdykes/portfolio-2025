@@ -195,7 +195,7 @@ function App() {
           </div>
         </section>
 
-        <section className="mt-60 container mx-auto px-8">
+        <section className="mt-60 container max-w-6xl mx-auto px-8">
           <SectionHeader>My Favourite Tools</SectionHeader>
           <div className="grid grid-cols-3 gap-4">
             <div className="hover:border-neutral-500 col-span-2 bg-neutral-800 aspect-video p-5 rounded-2xl border border-neutral-700 grid grid-cols-2 transition-all duration-100">

@@ -7,16 +7,16 @@ export function Nav() {
         <div className="flex gap-7">
           <a
             href="#"
-            className="text-white flex items-center gap-2"
+            className="text-white flex items-center gap-2 hover:brightness-90 transition-all"
             aria-label="Link To Home Page"
           >
-            <Home className="fill-icon-fill-focus w-[1.4rem]"></Home>
-            Home
+            <Home className="fill-icon-fill-focus w-[1.35rem]"></Home>
+            <span>Home</span>
           </a>
 
           <a
-            href="#"
-            className="text-white flex items-center gap-2"
+            href="/projects"
+            className="text-white flex items-center gap-2 hover:brightness-90 transition-all"
             aria-label="Link To Projects Archive"
           >
             <Folder className="fill-icon-fill w-6"></Folder>
@@ -27,21 +27,21 @@ export function Nav() {
         <div className="flex gap-7 items-center">
           <a
             href="#"
-            className="text-white flex  items-center gap-2"
+            className="text-neutral-100 flex items-center gap-2 underline decoration-transparent underline-offset-2 hover:decoration-white transition-all"
             aria-label="Link To Blog"
           >
             View Blog
           </a>
           <a
             href="#"
-            className="text-white flex  items-center gap-2"
+            className="text-neutral-100 flex items-center gap-2 underline decoration-transparent underline-offset-2 hover:decoration-white transition-all"
             aria-label="Link To Blog"
           >
             Socials
           </a>
           <a
             href="#"
-            className="text-white flex  items-center gap-2"
+            className="text-neutral-100 flex items-center gap-2 underline decoration-transparent underline-offset-2 hover:decoration-white transition-all"
             aria-label="Link To Download Resume"
           >
             Download CV
