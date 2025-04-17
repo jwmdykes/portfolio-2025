@@ -24,7 +24,7 @@ function SectionHeader({ children, className, ...rest }: ComponentProps<'h2'>) {
   return (
     <h2
       className={twMerge(
-        'text-center text-6xl font-semibold tracking-wide mb-18',
+        'text-center text-5xl sm:text-6xl font-semibold tracking-wide mb-8 sm:mb-18',
         className
       )}
       {...rest}
@@ -48,14 +48,14 @@ function App() {
           <div className="z-10 self-center justify-self-center col-start-1 row-start-1 h-[170px] aspect-[5/3] bg-radial from-bg-top from-70% to-transparent"></div>
           <div className="col-start-1 row-start-1 z-10 self-end w-full h-16 bg-gradient-to-b from-transparent to-bg-top from-0% to-90% translate-y-[60px]"></div>
           <div className="z-20 col-start-1 row-start-1 flex flex-col self-center items-center container mx-auto px-4 sm:px-8">
-            <h1 className="text-white text-6xl mb-4 font-semibold tracking-wide text-center">
+            <h1 className="text-white text-5xl sm:text-6xl mb-4 font-semibold tracking-wide text-center">
               John Dykes
             </h1>
-            <h2 className="text-neutral-300 text-2xl mb-5 text-center">
+            <h2 className="text-neutral-300 text-xl sm:text-2xl mb-5 text-center">
               Full Stack Web and AI Developer
             </h2>
 
-            <hr className="h-1 bg-accent mb-8 border-none rounded-[1px] w-[min(21rem,100%)]" />
+            <hr className="h-1 bg-accent mb-6 sm:mb-8 border-none rounded-[1px] w-[min(21rem,100%)]" />
 
             <ul className="flex items-center gap-4 fill-white">
               <li>
@@ -117,7 +117,7 @@ function App() {
           </div>
         </section>
 
-        <section className="mt-60 container mx-auto px-4 sm:px-8 flex flex-col w-[min(100%,900px)]">
+        <section className="mt-30 sm:mt-60 container mx-auto px-4 sm:px-8 flex flex-col w-[min(100%,900px)]">
           <SectionHeader>Recent Experience</SectionHeader>
 
           <div className="flex w-full gap-6">
@@ -226,9 +226,9 @@ function App() {
           </div>
         </section>
 
-        <section className="mt-60 container max-w-5xl mx-auto px-4 sm:px-8">
+        <section className="mt-30 sm:mt-60 container max-w-5xl mx-auto px-4 sm:px-8">
           <SectionHeader>My Favourite Tools</SectionHeader>
-          <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-6 md:grid-rows-3 lg:grid-rows-2">
+          <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-5 md:grid-rows-3 lg:grid-rows-2">
             <div className="col-span-1 md:col-span-2 bg-neutral-800 aspect-video px-5 py-7 rounded-2xl border border-neutral-700 grid grid-cols-2">
               <div className="flex flex-col justify-between">
                 <div>
@@ -321,17 +321,17 @@ function App() {
           </div>
         </section>
 
-        <section className="mt-60 container max-w-5xl mx-auto px-4 sm:px-8">
+        <section className="mt-30 sm:mt-60 container max-w-5xl mx-auto px-4 sm:px-8">
           <SectionHeader>Something Cool</SectionHeader>
           <Terminal />
         </section>
 
-        <section className="mt-60 container mx-auto px-4 sm:px-8">
+        <section className="mt-30 sm:mt-60 container mx-auto px-4 sm:px-8">
           <SectionHeader>Get In Touch</SectionHeader>
           <ContactForm />
         </section>
 
-        <Footer className="mt-48" />
+        <Footer className="mt-24 sm:mt-48" />
       </article>
     </div>
   );
