@@ -10,7 +10,7 @@ export function Nav() {
             className="text-white flex items-center gap-2 hover:brightness-90 transition-all"
             aria-label="Link To Home Page"
           >
-            <Home className="fill-icon-fill-focus w-[1.35rem]"></Home>
+            <Home className="fill-accent w-[1.35rem]"></Home>
             <span>Home</span>
           </a>
 

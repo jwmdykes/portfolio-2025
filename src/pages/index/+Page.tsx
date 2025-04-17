@@ -13,12 +13,12 @@ import {
   Postgres,
   Fastify,
   Stars,
-} from './Icons';
-import { ContactForm } from './ContactForm';
-import { Nav } from './Nav';
-import { Footer } from './Footer';
+} from '../../components/Icons';
+import { ContactForm } from '../../components/ContactForm';
+import { Nav } from '../../components/Nav';
+import { Footer } from '../../components/Footer';
 import { twMerge } from 'tailwind-merge';
-import { Terminal } from './Terminal';
+import { Terminal } from '../../components/Terminal';
 
 function SectionHeader({ children, className, ...rest }: ComponentProps<'h2'>) {
   return (
@@ -34,7 +34,7 @@ function SectionHeader({ children, className, ...rest }: ComponentProps<'h2'>) {
   );
 }
 
-function App() {
+export function Page() {
   return (
     <div className="bg-bg-top">
       <Nav />
@@ -338,5 +338,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
