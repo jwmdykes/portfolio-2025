@@ -39,11 +39,11 @@ function App() {
     <div className="bg-bg-top">
       <Nav />
       <article className="row-span-1 col-start-2 relative overflow-hidden">
-        <section className="h-[calc(100dvh-60px)] grid z-50">
+        <section className="h-[calc(100svh-60px)] grid z-50">
           <div className="z-0 col-start-1 row-start-1 self-center justify-self-center relative">
-            <Stars className="absolute h-[calc(100dvh)] -translate-y-1/2 -translate-x-1/2 fill-none stroke-accent stroke-3 [stroke-dasharray:0,299,0,0,0,0]"></Stars>
-            <Stars className="absolute h-[calc(100dvh)] -translate-y-1/2 -translate-x-1/2 fill-none stroke-accent stroke-2 [stroke-dasharray:0,203,0,0,0,0]"></Stars>
-            <Stars className="absolute h-[calc(100dvh)] -translate-y-1/2 -translate-x-1/2 fill-none stroke-accent stroke-1 [stroke-dasharray:0,100,0,0,0,0]"></Stars>
+            <Stars className="absolute h-svh -translate-y-1/2 -translate-x-1/2 fill-none stroke-accent stroke-3 [stroke-dasharray:0,299,0,0,0,0]"></Stars>
+            <Stars className="absolute h-svh -translate-y-1/2 -translate-x-1/2 fill-none stroke-accent stroke-2 [stroke-dasharray:0,203,0,0,0,0]"></Stars>
+            <Stars className="absolute h-svh -translate-y-1/2 -translate-x-1/2 fill-none stroke-accent stroke-1 [stroke-dasharray:0,100,0,0,0,0]"></Stars>
           </div>
           <div className="z-10 self-center justify-self-center col-start-1 row-start-1 h-[170px] aspect-[5/3] bg-radial from-bg-top from-70% to-transparent"></div>
           <div className="col-start-1 row-start-1 z-10 self-end w-full h-16 bg-gradient-to-b from-transparent to-bg-top from-0% to-90% translate-y-[60px]"></div>
@@ -120,7 +120,7 @@ function App() {
         <section className="mt-30 sm:mt-60 container mx-auto px-2 sm:px-8 flex flex-col w-[min(100%,900px)]">
           <SectionHeader>Recent Experience</SectionHeader>
 
-          <div className="flex w-full gap-6">
+          <div className="flex w-full gap-6 mt-4">
             <div className="grow">
               <ol className="grid grid-cols-1 gap-10">
                 <li className="">
@@ -137,14 +137,14 @@ function App() {
                     Founder / May 2024 &mdash; Present
                   </h4>
                   <ul className="text-neutral-200 flex flex-col gap-1">
-                    <li className="before:w-2 before:aspect-square before:bg-accent before:rounded-full flex items-center gap-2">
+                    <li className="before:shrink-0 before:w-[0.48rem] before:aspect-square before:bg-accent before:rounded-full before:mt-2 flex items-start gap-2">
                       Developing AI powered translation application for comics
                     </li>
-                    <li className="before:w-2 before:aspect-square before:bg-accent before:rounded-full flex items-center gap-2">
+                    <li className="before:shrink-0 before:w-[0.48rem] before:aspect-square before:bg-accent before:rounded-full before:mt-2 flex items-start gap-2">
                       OCR AI model designed and trained using pytorch and
                       proprietary text rendering library.
                     </li>
-                    <li className="before:w-2 before:aspect-square before:bg-accent before:rounded-full flex items-center gap-2">
+                    <li className="before:shrink-0 before:w-[0.48rem] before:aspect-square before:bg-accent before:rounded-full before:mt-2 flex items-start gap-2">
                       Models run in the browser with WebGPU, reducing costs
                     </li>
                   </ul>
@@ -158,11 +158,11 @@ function App() {
                     Cryptanalyst / September 2020 &mdash; May 2024
                   </h4>
                   <ul className="text-neutral-200 flex flex-col gap-1">
-                    <li className="before:w-2 before:aspect-square before:bg-accent before:rounded-full flex items-center gap-2">
+                    <li className="before:shrink-0 before:w-[0.48rem] before:aspect-square before:bg-accent before:rounded-full before:mt-2 flex items-start gap-2">
                       Implementing, evaluating cryptographic standards and
                       algorithms
                     </li>
-                    <li className="before:w-2 before:aspect-square before:bg-accent before:rounded-full flex items-center gap-2">
+                    <li className="before:shrink-0 before:w-[0.48rem] before:aspect-square before:bg-accent before:rounded-full before:mt-2 flex items-start gap-2">
                       Other top secret cryptographic research
                     </li>
                   </ul>
@@ -176,11 +176,11 @@ function App() {
                     Analyst / September 2019 &mdash; September 2020
                   </h4>
                   <ul className="text-neutral-200 flex flex-col gap-1">
-                    <li className="before:w-2 before:aspect-square before:bg-accent before:rounded-full flex items-center gap-2">
+                    <li className="before:shrink-0 before:w-[0.48rem] before:aspect-square before:bg-accent before:rounded-full before:mt-2 flex items-start gap-2">
                       Implementing, evaluating cryptographic standards and
                       algorithms
                     </li>
-                    <li className="before:w-2 before:aspect-square before:bg-accent before:rounded-full flex items-center gap-2">
+                    <li className="before:shrink-0 before:w-[0.48rem] before:aspect-square before:bg-accent before:rounded-full before:mt-2 flex items-start gap-2">
                       Other top secret cryptographic research
                     </li>
                   </ul>
@@ -194,17 +194,19 @@ function App() {
                     Graduate Student / January 2019 &mdash; December 2019
                   </h4>
                   <ul className="text-neutral-200 flex flex-col gap-1">
-                    <li className="before:w-2 before:aspect-square before:bg-accent before:rounded-full flex items-center gap-2">
+                    <li className="before:shrink-0 before:w-[0.48rem] before:aspect-square before:bg-accent before:rounded-full before:mt-2 flex items-start gap-2">
                       Master's degree program in mathematics
                     </li>
-                    <li className="before:w-2 before:aspect-square before:bg-accent before:rounded-full flex items-center gap-2">
-                      Studied analytic number theory with
-                      <a
-                        href="https://uwaterloo.ca/pure-mathematics/yu-ru-liu"
-                        className="underline underline-offset-2 decoration-white decoration-1 hover:decoration-accent transition-all duration-300"
-                      >
-                        Professor Yu-Ru Liu
-                      </a>
+                    <li className="before:shrink-0 before:w-[0.48rem] before:aspect-square before:bg-accent before:rounded-full before:mt-2 flex items-start gap-2">
+                      <span>
+                        Studied analytic number theory with{' '}
+                        <a
+                          href="https://uwaterloo.ca/pure-mathematics/yu-ru-liu"
+                          className="inline underline underline-offset-2 decoration-white decoration-1 hover:decoration-accent transition-all duration-300"
+                        >
+                          Professor Yu-Ru Liu
+                        </a>
+                      </span>
                     </li>
                   </ul>
                 </li>
@@ -219,7 +221,7 @@ function App() {
                 </li>
               </ol>
             </div>
-            <div className="grid">
+            <div className="hidden sm:grid">
               <div className="justify-self-center row-start-1 col-start-1 w-[1px] rounded-full h-full bg-neutral-300"></div>
               <div className="row-start-1 col-start-1 rounded-[3px] w-2 aspect-square bg-accent" />
             </div>
@@ -331,7 +333,7 @@ function App() {
           <ContactForm />
         </section>
 
-        <Footer className="mt-24 sm:mt-48" />
+        <Footer className="mt-16 sm:mt-48" />
       </article>
     </div>
   );
