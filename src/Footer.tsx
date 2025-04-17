@@ -9,7 +9,7 @@ export function Footer({
   return (
     <footer
       className={twMerge(
-        'flex justify-between px-4 py-4 text-base text-neutral-300 bg-bg-top',
+        'flex justify-between px-6 py-5 text-base text-neutral-300 bg-bg-bottom',
         className
       )}
       {...props}

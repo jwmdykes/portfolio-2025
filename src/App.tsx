@@ -221,7 +221,7 @@ function App() {
         <section className="mt-60 container max-w-5xl mx-auto px-8">
           <SectionHeader>My Favourite Tools</SectionHeader>
           <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-6 md:grid-rows-3 lg:grid-rows-2">
-            <div className="hover:border-neutral-500 col-span-1 md:col-span-2 bg-neutral-800 aspect-video px-5 py-7 rounded-2xl border border-neutral-700 grid grid-cols-2 transition-all duration-100">
+            <div className="col-span-1 md:col-span-2 bg-neutral-800 aspect-video px-5 py-7 rounded-2xl border border-neutral-700 grid grid-cols-2">
               <div className="flex flex-col justify-between">
                 <div>
                   <h3 className="text-xl flex gap-2 items-center justify-start font-medium">
@@ -254,7 +254,7 @@ function App() {
               </div>
               <ReactLogo className="justify-self-center self-center h-11/12 fill-neutral-700 stroke-3 stroke-neutral-600"></ReactLogo>
             </div>
-            <div className="hover:border-neutral-500 transition-all duration-100 col-span-1 bg-neutral-800 rounded-2xl border border-neutral-700 px-5 py-7">
+            <div className="col-span-1 bg-neutral-800 rounded-2xl border border-neutral-700 px-5 py-7">
               <h3 className="text-xl flex gap-2 items-center justify-start font-medium">
                 <Postgres className="w-7 h-7 stroke-[1px]"></Postgres>
                 PostgreSQL
@@ -266,7 +266,7 @@ function App() {
                 Used by LangPanel, alongside the postgres provider Supabase.
               </p>
             </div>
-            <div className="hover:border-neutral-500 transition-all duration-100 col-span-1 bg-neutral-800 rounded-2xl border border-neutral-700 px-5 py-7">
+            <div className="col-span-1 bg-neutral-800 rounded-2xl border border-neutral-700 px-5 py-7">
               <h3 className="text-xl flex gap-2 items-center justify-start font-medium">
                 <Tailwind className="w-6 fill-accent stroke-none"></Tailwind>
                 Tailwind CSS
@@ -278,7 +278,7 @@ function App() {
                 For my styling needs, I often reach for Tailwind over plain CSS.
               </p>
             </div>
-            <div className="hover:border-neutral-500 transition-all duration-100 col-span-1 bg-neutral-800 rounded-2xl border border-neutral-700 px-5 py-7 ">
+            <div className="col-span-1 bg-neutral-800 rounded-2xl border border-neutral-700 px-5 py-7 ">
               <h3 className="text-xl flex gap-2 items-center justify-start font-medium">
                 <PyTorch className="w-6  stroke-none"></PyTorch>
                 PyTorch
@@ -297,7 +297,7 @@ function App() {
                 .
               </p>
             </div>
-            <div className="hover:border-neutral-500 transition-all duration-100 col-span-1 bg-neutral-800 rounded-2xl border border-neutral-700 px-5 py-7">
+            <div className="col-span-1 bg-neutral-800 rounded-2xl border border-neutral-700 px-5 py-7">
               <h3 className="text-xl flex gap-2 items-center justify-start font-medium">
                 <Fastify className="w-7 fill-white stroke-none"></Fastify>
                 Fastify
