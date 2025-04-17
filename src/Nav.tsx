@@ -6,7 +6,7 @@ export function Nav() {
       <div className="grow flex justify-between">
         <div className="flex gap-7 text-sm">
           <a
-            href="#"
+            href="/"
             className="text-white flex items-center gap-2 hover:brightness-90 transition-all"
             aria-label="Link To Home Page"
           >

@@ -16,9 +16,6 @@ export function Terminal() {
     if (terminalRef.current) {
       terminalRef.current.scrollTop = terminalRef.current.scrollHeight;
     }
-    if (inputRef.current) {
-      inputRef.current.focus();
-    }
   }, [lines]);
 
   const handleInputChange: ChangeEventHandler<HTMLInputElement> = (event) => {
@@ -53,7 +50,6 @@ export function Terminal() {
           value={currentInput}
           onChange={handleInputChange}
           className="caret-accent bg-transparent text-white outline-none ml-2 w-full"
-          autoFocus
         />
       </form>
     </div>
