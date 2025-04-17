@@ -16,7 +16,7 @@ export function Footer({
     >
       <span>© 2025 John Dykes</span>
       <a
-        href="https://github.com/jwmdykes/portfolio-website"
+        href="https://github.com/jwmdykes/portfolio-2025"
         className="flex gap-2 fill-neutral-300 hover:fill-white hover:text-white transition-all"
       >
         <Github className="w-5" />
