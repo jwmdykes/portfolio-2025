@@ -69,9 +69,16 @@ function App() {
               <img
                 src="/langpanel.webp"
                 alt="LangPanel Project Thumbnail Image"
+                className="scale-100 translate-x-0 hover:scale-105 hover:translate-x-3 transition-all"
               />
             </li>
-            <li className="bg-neutral-600 aspect-video">Second Project</li>
+            <li className="bg-neutral-600 aspect-video rounded-xl overflow-hidden">
+              <img
+                src="/react-calculator.webp"
+                alt="React Calculator Video Project Thumbnail Image"
+                className="scale-100 translate-x-0 hover:scale-105 hover:-translate-x-2  hover:-translate-y-1 transition-all"
+              />
+            </li>
             <li className="bg-neutral-600 aspect-video">Third Project</li>
             <li className="bg-neutral-600 aspect-video">Fourth Project</li>
           </ul>
