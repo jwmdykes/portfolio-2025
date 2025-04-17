@@ -46,6 +46,7 @@ function App() {
             <Stars className="absolute h-[calc(100dvh-56.8px)] -translate-y-1/2 -translate-x-1/2 fill-none stroke-accent stroke-1 [stroke-dasharray:0,100,0,0,0,0]"></Stars>
           </div>
           <div className="z-10 self-center justify-self-center col-start-1 row-start-1 h-[170px] aspect-[5/3] bg-radial from-bg-top from-70% to-transparent"></div>
+          <div className="col-start-1 row-start-1 z-10 self-end w-full h-32 bg-gradient-to-b from-transparent to-bg-top from-0% to-80%"></div>
           <div className="z-20 col-start-1 row-start-1 flex flex-col self-center items-center container mx-auto px-8">
             <h1 className="text-white text-6xl mb-4 font-semibold tracking-wide">
               John Dykes
