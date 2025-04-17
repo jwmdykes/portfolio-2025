@@ -39,15 +39,15 @@ function App() {
     <div className="bg-bg-top">
       <Nav />
       <article className="row-span-1 col-start-2 relative overflow-hidden">
-        <section className="h-[calc(100dvh-56.8px)] grid z-50">
+        <section className="h-[calc(100dvh-60px)] grid z-50">
           <div className="z-0 col-start-1 row-start-1 self-center justify-self-center relative">
-            <Stars className="absolute h-[calc(100dvh-56.8px)] -translate-y-1/2 -translate-x-1/2 fill-none stroke-accent stroke-3 [stroke-dasharray:0,299,0,0,0,0]"></Stars>
-            <Stars className="absolute h-[calc(100dvh-56.8px)] -translate-y-1/2 -translate-x-1/2 fill-none stroke-accent stroke-2 [stroke-dasharray:0,203,0,0,0,0]"></Stars>
-            <Stars className="absolute h-[calc(100dvh-56.8px)] -translate-y-1/2 -translate-x-1/2 fill-none stroke-accent stroke-1 [stroke-dasharray:0,100,0,0,0,0]"></Stars>
+            <Stars className="absolute h-[calc(100dvh-60px)] -translate-y-1/2 -translate-x-1/2 fill-none stroke-accent stroke-3 [stroke-dasharray:0,299,0,0,0,0]"></Stars>
+            <Stars className="absolute h-[calc(100dvh-60px)] -translate-y-1/2 -translate-x-1/2 fill-none stroke-accent stroke-2 [stroke-dasharray:0,203,0,0,0,0]"></Stars>
+            <Stars className="absolute h-[calc(100dvh-60px)] -translate-y-1/2 -translate-x-1/2 fill-none stroke-accent stroke-1 [stroke-dasharray:0,100,0,0,0,0]"></Stars>
           </div>
           <div className="z-10 self-center justify-self-center col-start-1 row-start-1 h-[170px] aspect-[5/3] bg-radial from-bg-top from-70% to-transparent"></div>
           <div className="col-start-1 row-start-1 z-10 self-end w-full h-32 bg-gradient-to-b from-transparent to-bg-top from-0% to-80%"></div>
-          <div className="z-20 col-start-1 row-start-1 flex flex-col self-center items-center container mx-auto px-8">
+          <div className="z-20 col-start-1 row-start-1 flex flex-col self-center items-center container mx-auto px-4 sm:px-8">
             <h1 className="text-white text-6xl mb-4 font-semibold tracking-wide">
               John Dykes
             </h1>
@@ -117,7 +117,7 @@ function App() {
           </div>
         </section>
 
-        <section className="mt-60 container mx-auto px-8 flex flex-col w-[min(100%,900px)]">
+        <section className="mt-60 container mx-auto px-4 sm:px-8 flex flex-col w-[min(100%,900px)]">
           <SectionHeader>Recent Experience</SectionHeader>
 
           <div className="flex w-full gap-6">
@@ -226,7 +226,7 @@ function App() {
           </div>
         </section>
 
-        <section className="mt-60 container max-w-5xl mx-auto px-8">
+        <section className="mt-60 container max-w-5xl mx-auto px-4 sm:px-8">
           <SectionHeader>My Favourite Tools</SectionHeader>
           <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-6 md:grid-rows-3 lg:grid-rows-2">
             <div className="col-span-1 md:col-span-2 bg-neutral-800 aspect-video px-5 py-7 rounded-2xl border border-neutral-700 grid grid-cols-2">
@@ -321,12 +321,12 @@ function App() {
           </div>
         </section>
 
-        <section className="mt-60 container max-w-5xl mx-auto px-8">
+        <section className="mt-60 container max-w-5xl mx-auto px-4 sm:px-8">
           <SectionHeader>Something Cool</SectionHeader>
           <Terminal />
         </section>
 
-        <section className="mt-60 container mx-auto px-8">
+        <section className="mt-60 container mx-auto px-4 sm:px-8">
           <SectionHeader>Get In Touch</SectionHeader>
           <ContactForm />
         </section>

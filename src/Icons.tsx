@@ -246,3 +246,13 @@ export function Stars(props: ComponentPropsWithRef<'svg'>) {
     </svg>
   );
 }
+
+export function Hamburger(props: ComponentPropsWithRef<'svg'>) {
+  return (
+    <svg viewBox="0 0 32 32" {...props}>
+      <path d="m29 8h-26c-1.1045 0-2-.8955-2-2s.8955-2 2-2h26c1.1045 0 2 .8955 2 2s-.8955 2-2 2z"></path>
+      <path d="m29 28h-26c-1.1045 0-2-.8955-2-2s.8955-2 2-2h26c1.1045 0 2 .8955 2 2s-.8955 2-2 2z"></path>
+      <path d="m29 18h-26c-1.1045 0-2-.8955-2-2s.8955-2 2-2h26c1.1045 0 2 .8955 2 2s-.8955 2-2 2z"></path>
+    </svg>
+  );
+}

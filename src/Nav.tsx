@@ -1,8 +1,8 @@
-import { Folder, Home } from './Icons';
+import { Folder, Hamburger, Home } from './Icons';
 
 export function Nav() {
   return (
-    <nav className="z-50 bg-bg-top sticky top-0 flex flex-col justify-between px-6 py-4 font-semibold tracking-wide border-b border-border">
+    <nav className="z-50 bg-bg-top sticky top-0 flex flex-col justify-between px-6 h-[60px] font-semibold tracking-wide border-b border-border">
       <div className="grow flex justify-between">
         <div className="flex gap-7 text-sm">
           <a
@@ -24,7 +24,7 @@ export function Nav() {
           </a>
         </div>
 
-        <div className="flex gap-7 items-center text-sm">
+        <div className="gap-7 items-center text-sm hidden sm:flex">
           <a
             href="#"
             className="text-neutral-100 flex items-center gap-2 underline decoration-transparent underline-offset-2 hover:decoration-white transition-all"
@@ -46,6 +46,15 @@ export function Nav() {
           >
             Download CV
           </a>
+        </div>
+
+        <div className="sm:hidden flex items-center justify-center ">
+          <button
+            className="p-2 translate-x-2 hover:cursor-pointer hover:bg-neutral-800 rounded-xl"
+            aria-label="Toggle Sidemenu button"
+          >
+            <Hamburger className="fill-icon-fill w-6" />
+          </button>
         </div>
       </div>
     </nav>
