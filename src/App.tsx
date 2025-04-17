@@ -1,4 +1,4 @@
-import React, { ComponentProps } from 'react';
+import { ComponentProps } from 'react';
 import {
   Youtube,
   Github,
@@ -7,8 +7,6 @@ import {
   RightArrow,
   DownChevron,
   ReactLogo,
-  Database,
-  Web,
   Checkmark,
   Tailwind,
   PyTorch,
@@ -277,7 +275,7 @@ function App() {
                 Making everything look pretty
               </p>
               <p className="mt-1 text-sm text-neutral-400">
-                For my styling needs, I often go to Tailwind over plain CSS.
+                For my styling needs, I often reach for Tailwind over plain CSS.
               </p>
             </div>
             <div className="hover:border-neutral-500 transition-all duration-100 col-span-1 bg-neutral-800 rounded-2xl border border-neutral-700 px-5 py-7 ">
