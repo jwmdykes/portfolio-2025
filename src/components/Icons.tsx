@@ -218,7 +218,7 @@ export function Stars(props: ComponentPropsWithRef<'svg'>) {
       {...props}
     >
       <filter id="glow">
-        <feGaussianBlur stdDeviation="10" result="coloredBlur" />
+        <feGaussianBlur stdDeviation="2" result="coloredBlur" />
         <feMerge>
           <feMergeNode in="coloredBlur" />
           <feMergeNode in="SourceGraphic" />

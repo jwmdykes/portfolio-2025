@@ -41,9 +41,9 @@ export function Page() {
       <article className="row-span-1 col-start-2 relative overflow-hidden">
         <section className="h-[calc(100svh-60px)] grid z-50">
           <div className="z-0 col-start-1 row-start-1 self-center justify-self-center relative">
-            <Stars className="absolute h-svh -translate-y-1/2 -translate-x-1/2 fill-none stroke-accent stroke-3 [stroke-dasharray:0,299,0,0,0,0]"></Stars>
-            <Stars className="absolute h-svh -translate-y-1/2 -translate-x-1/2 fill-none stroke-accent stroke-2 [stroke-dasharray:0,203,0,0,0,0]"></Stars>
-            <Stars className="absolute h-svh -translate-y-1/2 -translate-x-1/2 fill-none stroke-accent stroke-1 [stroke-dasharray:0,100,0,0,0,0]"></Stars>
+            <Stars className="absolute h-svh -translate-y-1/2 -translate-x-1/2 fill-none stroke-accent/70 stroke-3 [stroke-dasharray:0,299,0,0,0,0]"></Stars>
+            <Stars className="absolute h-svh -translate-y-1/2 -translate-x-1/2 fill-none stroke-accent/80 stroke-2 [stroke-dasharray:0,203,0,0,0,0]"></Stars>
+            <Stars className="absolute h-svh -translate-y-1/2 -translate-x-1/2 fill-none stroke-accent/90 stroke-1 [stroke-dasharray:0,100,0,0,0,0]"></Stars>
           </div>
           <div className="z-10 self-center justify-self-center col-start-1 row-start-1 h-[170px] aspect-[5/3] bg-radial from-bg-top from-70% to-transparent"></div>
           <div className="col-start-1 row-start-1 z-10 self-end w-full h-16 bg-gradient-to-b from-transparent to-bg-top from-0% to-90% translate-y-[60px]"></div>
