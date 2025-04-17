@@ -24,7 +24,7 @@ function SectionHeader({ children, className, ...rest }: ComponentProps<'h2'>) {
   return (
     <h2
       className={twMerge(
-        'text-center text-5xl sm:text-6xl font-semibold tracking-wide mb-8 sm:mb-18',
+        'sm:text-center text-5xl sm:text-6xl font-semibold tracking-wide mb-4 sm:mb-18 leading-14',
         className
       )}
       {...rest}
@@ -75,7 +75,7 @@ function App() {
         </section>
 
         <section className="mt-16 text-white flex flex-col mx-auto max-w-[1472px]">
-          <SectionHeader>Featured Projects</SectionHeader>
+          <SectionHeader className="px-2">Featured Projects</SectionHeader>
           <ul className="grow grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-2 px-2">
             <li className="bg-neutral-600 aspect-video rounded-xl overflow-hidden">
               <img
@@ -117,7 +117,7 @@ function App() {
           </div>
         </section>
 
-        <section className="mt-30 sm:mt-60 container mx-auto px-4 sm:px-8 flex flex-col w-[min(100%,900px)]">
+        <section className="mt-30 sm:mt-60 container mx-auto px-2 sm:px-8 flex flex-col w-[min(100%,900px)]">
           <SectionHeader>Recent Experience</SectionHeader>
 
           <div className="flex w-full gap-6">
@@ -226,11 +226,12 @@ function App() {
           </div>
         </section>
 
-        <section className="mt-30 sm:mt-60 container max-w-5xl mx-auto px-4 sm:px-8">
+        <section className="mt-30 sm:mt-60 container max-w-5xl mx-auto px-2 sm:px-8">
           <SectionHeader>My Favourite Tools</SectionHeader>
           <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-5 md:grid-rows-3 lg:grid-rows-2">
-            <div className="col-span-1 md:col-span-2 bg-neutral-800 aspect-video px-5 py-7 rounded-2xl border border-neutral-700 grid grid-cols-2">
-              <div className="flex flex-col justify-between">
+            <div className="col-span-1 md:col-span-2 bg-neutral-800 aspect-video px-3 sm:px-5 py-5 sm:py-7 rounded-2xl border border-neutral-700 grid grid-cols-1 sm:grid-cols-2 overflow-x-clip">
+              <ReactLogo className="row-start-1 col-start-1 translate-x-1/2 sm:translate-x-0 justify-self-end sm:justify-self-center self-center h-11/12 fill-neutral-700 stroke-3 stroke-neutral-600"></ReactLogo>
+              <div className="z-10 row-start-1 col-start-1 flex flex-col justify-between gap-12 sm:gap-0">
                 <div>
                   <h3 className="text-xl flex gap-2 items-center justify-start font-medium">
                     <ReactLogo className="fill-react-blue w-7" />
@@ -260,7 +261,6 @@ function App() {
                   </li>
                 </ul>
               </div>
-              <ReactLogo className="justify-self-center self-center h-11/12 fill-neutral-700 stroke-3 stroke-neutral-600"></ReactLogo>
             </div>
             <div className="col-span-1 bg-neutral-800 rounded-2xl border border-neutral-700 px-5 py-7">
               <h3 className="text-xl flex gap-2 items-center justify-start font-medium">
@@ -321,12 +321,12 @@ function App() {
           </div>
         </section>
 
-        <section className="mt-30 sm:mt-60 container max-w-5xl mx-auto px-4 sm:px-8">
+        <section className="mt-30 sm:mt-60 container max-w-5xl mx-auto px-2 sm:px-8">
           <SectionHeader>Something Cool</SectionHeader>
           <Terminal />
         </section>
 
-        <section className="mt-30 sm:mt-60 container mx-auto px-4 sm:px-8">
+        <section className="mt-30 sm:mt-60 container mx-auto px-2 sm:px-8">
           <SectionHeader>Get In Touch</SectionHeader>
           <ContactForm />
         </section>
