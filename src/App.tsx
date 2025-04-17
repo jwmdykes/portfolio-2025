@@ -68,7 +68,7 @@ function App() {
 
         <section className="mt-16 text-white flex flex-col mx-auto max-w-[1472px]">
           <SectionHeader>Featured Projects</SectionHeader>
-          <ul className="grow grid grid-cols-2 gap-2 px-2">
+          <ul className="grow grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-2 px-2">
             <li className="bg-neutral-600 aspect-video rounded-xl overflow-hidden">
               <img
                 src="/langpanel.webp"
@@ -220,8 +220,8 @@ function App() {
 
         <section className="mt-60 container max-w-5xl mx-auto px-8">
           <SectionHeader>My Favourite Tools</SectionHeader>
-          <div className="grid grid-cols-3 gap-4 grid-rows-2">
-            <div className="hover:border-neutral-500 col-span-2 bg-neutral-800 aspect-video px-5 py-7 rounded-2xl border border-neutral-700 grid grid-cols-2 transition-all duration-100">
+          <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-6 md:grid-rows-3 lg:grid-rows-2">
+            <div className="hover:border-neutral-500 col-span-1 md:col-span-2 bg-neutral-800 aspect-video px-5 py-7 rounded-2xl border border-neutral-700 grid grid-cols-2 transition-all duration-100">
               <div className="flex flex-col justify-between">
                 <div>
                   <h3 className="text-xl flex gap-2 items-center justify-start font-medium">
