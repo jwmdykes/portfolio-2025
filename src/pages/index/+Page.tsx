@@ -29,25 +29,31 @@ export function Page() {
         <SectionHeader className="px-2">Featured Projects</SectionHeader>
         <ul className="grow grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-2 px-2">
           <li className="bg-neutral-600 aspect-video rounded-xl overflow-hidden">
-            <img
-              src="/langpanel.webp"
-              alt="LangPanel Project Thumbnail"
-              className="scale-100  hover:scale-105  transition-all"
-            />
-          </li>
-          <li className="bg-neutral-600 aspect-video rounded-xl overflow-hidden">
-            <img
-              src="/react-calculator.webp"
-              alt="React Calculator Video Project Thumbnail"
-              className="scale-100  hover:scale-105 transition-all"
-            />
+            <a href="https://langpanel.com">
+              <img
+                src="/langpanel.webp"
+                alt="LangPanel Project Thumbnail"
+                className="scale-100  hover:scale-105  transition-all"
+              />
+            </a>
           </li>
           <li className="bg-[#191f26] aspect-video rounded-xl overflow-hidden">
-            <img
-              src="/web-synth.webp"
-              alt="WebAudio Synthesizer Project Thumbnail"
-              className="scale-100 hover:scale-105 transition-all"
-            />
+            <a href="https://web-synth.pages.dev/">
+              <img
+                src="/web-synth.webp"
+                alt="WebAudio Synthesizer Project Thumbnail"
+                className="scale-100 hover:scale-105 transition-all"
+              />
+            </a>
+          </li>
+          <li className="bg-neutral-600 aspect-video rounded-xl overflow-hidden">
+            <a href="https://www.youtube.com/watch?v=BHaXdVbenoY">
+              <img
+                src="/react-calculator.webp"
+                alt="React Calculator Video Project Thumbnail"
+                className="scale-100  hover:scale-105 transition-all"
+              />
+            </a>
           </li>
           <li className="bg-[#382370] aspect-video rounded-xl overflow-hidden">
             <img

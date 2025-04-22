@@ -37,7 +37,7 @@ export function Nav() {
   }, []);
 
   return (
-    <nav className="z-50 bg-bg-top sticky top-0 flex flex-col justify-between px-2 sm:px-6 h-[60px] tracking-wide border-b border-border">
+    <nav className="z-50 bg-bg-top sticky top-0 flex flex-col justify-between px-2 sm:px-4 h-[60px] tracking-wide border-b border-border">
       <div className="grow flex justify-between">
         <div className="flex gap-4 sm:gap-7 text-sm font-medium items-center">
           <a
