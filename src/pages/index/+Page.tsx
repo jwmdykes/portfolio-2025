@@ -46,6 +46,15 @@ export function Page() {
               />
             </a>
           </li>
+          <li className="bg-[#382370] aspect-video rounded-xl overflow-hidden">
+            <a href="https://chinese-checkers.pages.dev/">
+              <img
+                src="/chinese-checkers.webp"
+                alt="Chinese Checkers Project Thumbnail"
+                className="scale-100 hover:scale-105 transition-all"
+              />
+            </a>
+          </li>
           <li className="bg-neutral-600 aspect-video rounded-xl overflow-hidden">
             <a href="https://www.youtube.com/watch?v=BHaXdVbenoY">
               <img
@@ -55,13 +64,6 @@ export function Page() {
               />
             </a>
           </li>
-          <li className="bg-[#382370] aspect-video rounded-xl overflow-hidden">
-            <img
-              src="/coming-soon.webp"
-              alt="WebAudio Synthesizer Project Thumbnail"
-              className="scale-100 hover:scale-105 transition-all"
-            />
-          </li>{' '}
         </ul>
         <div className="flex justify-end">
           <a
