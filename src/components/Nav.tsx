@@ -1,9 +1,16 @@
 import { useCallback, useState } from 'react';
-import { Folder, Hamburger, Home } from './Icons';
+import { Hamburger, Logo } from './Icons';
 
 export function Links() {
   return (
     <>
+      <a
+        href="/projects"
+        className="text-neutral-100 flex items-center gap-2 underline decoration-transparent underline-offset-2 hover:underline-offset-4 hover:decoration-white transition-all duration-300"
+        aria-label="Link To Projects Archive"
+      >
+        <span>Projects</span>
+      </a>
       <a
         href="https://medium.com/@98johndykes"
         className="text-neutral-100 flex items-center gap-2 underline decoration-transparent underline-offset-2 hover:underline-offset-4 hover:decoration-white transition-all duration-300"
@@ -32,23 +39,13 @@ export function Nav() {
   return (
     <nav className="z-50 bg-bg-top sticky top-0 flex flex-col justify-between px-2 sm:px-6 h-[60px] tracking-wide border-b border-border">
       <div className="grow flex justify-between">
-        <div className="flex gap-4 sm:gap-7 text-sm font-medium">
+        <div className="flex gap-4 sm:gap-7 text-sm font-medium items-center">
           <a
             href="/"
             className="text-white flex items-center gap-2 hover:brightness-90 transition-all"
             aria-label="Link To Home Page"
           >
-            <Home className="fill-accent w-[1.35rem]"></Home>
-            <span>Home</span>
-          </a>
-
-          <a
-            href="/projects"
-            className="text-white flex items-center gap-2 hover:brightness-90 transition-all"
-            aria-label="Link To Projects Archive"
-          >
-            <Folder className="fill-icon-fill w-6"></Folder>
-            <span>Projects</span>
+            <Logo className="fill-white h-7"></Logo>
           </a>
         </div>
         <div className="gap-7 items-center text-sm hidden sm:flex font-medium">
