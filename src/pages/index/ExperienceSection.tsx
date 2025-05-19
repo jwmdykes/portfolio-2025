@@ -61,15 +61,18 @@ function ExperienceSection() {
                 Communications Research Centre Canada
               </h3>
               <h4 className="text-base text-neutral-300 font-light mb-2">
-                Analyst / September 2019 &mdash; September 2020
+                Computer Research Programmer / November 2019 &mdash; September
+                2020
               </h4>
               <ul className="text-neutral-200 flex flex-col gap-1">
                 <li className="before:shrink-0 before:w-[0.48rem] before:aspect-square before:bg-accent before:rounded-full before:mt-2 flex items-start gap-2">
-                  Implementing, evaluating cryptographic standards and
-                  algorithms
+                  Applied machine learning and Geo-computation to
+                  Telecommunications Data, including estimating the interference
+                  that cellular towers have on each other
                 </li>
                 <li className="before:shrink-0 before:w-[0.48rem] before:aspect-square before:bg-accent before:rounded-full before:mt-2 flex items-start gap-2">
-                  Other top secret cryptographic research
+                  Attended a 1-week long training course on machine learning
+                  using TensorFlow
                 </li>
               </ul>
             </li>
