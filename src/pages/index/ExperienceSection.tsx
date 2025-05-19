@@ -101,49 +101,37 @@ function ExperienceSection() {
               <>
                 <li className="">
                   <h3 className="text-xl font-medium">
-                    University of Waterloo
+                    University of Waterloo and Carleton University
                   </h3>
                   <h4 className="text-base text-neutral-300 font-light mb-2">
-                    Graduate Student / January 2019 &mdash; December 2019
+                    Teaching Assistant / Sept. 2017 &mdash; December 2018
                   </h4>
                   <ul className="text-neutral-200 flex flex-col gap-1">
                     <li className="before:shrink-0 before:w-[0.48rem] before:aspect-square before:bg-accent before:rounded-full before:mt-2 flex items-start gap-2">
-                      Master's degree program in mathematics
+                      Marked assignments for undergraduate math classes
                     </li>
                     <li className="before:shrink-0 before:w-[0.48rem] before:aspect-square before:bg-accent before:rounded-full before:mt-2 flex items-start gap-2">
-                      <span>
-                        Studied analytic number theory with{' '}
-                        <a
-                          href="https://uwaterloo.ca/pure-mathematics/yu-ru-liu"
-                          className="inline underline underline-offset-2 decoration-white decoration-1 hover:decoration-accent transition-all duration-300"
-                        >
-                          Professor Yu-Ru Liu
-                        </a>
-                      </span>
+                      Held office hours to answer student questions
+                    </li>
+                    <li className="before:shrink-0 before:w-[0.48rem] before:aspect-square before:bg-accent before:rounded-full before:mt-2 flex items-start gap-2">
+                      Taught tutorials for undergraduate math classes
                     </li>
                   </ul>
                 </li>
                 <li className="">
-                  <h3 className="text-xl font-medium">
-                    University of Waterloo
-                  </h3>
+                  <h3 className="text-xl font-medium">Carleton University</h3>
                   <h4 className="text-base text-neutral-300 font-light mb-2">
-                    Graduate Student / January 2019 &mdash; December 2019
+                    Undergraduate Student / May 2014 &mdash; December 2017
                   </h4>
                   <ul className="text-neutral-200 flex flex-col gap-1">
                     <li className="before:shrink-0 before:w-[0.48rem] before:aspect-square before:bg-accent before:rounded-full before:mt-2 flex items-start gap-2">
-                      Master's degree program in mathematics
+                      Bachelor's degree in Mathematics, honours
                     </li>
                     <li className="before:shrink-0 before:w-[0.48rem] before:aspect-square before:bg-accent before:rounded-full before:mt-2 flex items-start gap-2">
-                      <span>
-                        Studied analytic number theory with{' '}
-                        <a
-                          href="https://uwaterloo.ca/pure-mathematics/yu-ru-liu"
-                          className="inline underline underline-offset-2 decoration-white decoration-1 hover:decoration-accent transition-all duration-300"
-                        >
-                          Professor Yu-Ru Liu
-                        </a>
-                      </span>
+                      Graduated with high distinction
+                    </li>
+                    <li className="before:shrink-0 before:w-[0.48rem] before:aspect-square before:bg-accent before:rounded-full before:mt-2 flex items-start gap-2">
+                      Senate Medal for Outstanding Academic Achievement 2018
                     </li>
                   </ul>
                 </li>

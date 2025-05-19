@@ -1,4 +1,3 @@
-import { RightArrow } from '../../components/Icons';
 import { ContactForm } from '../../components/ContactForm';
 import { ExperienceSection } from './ExperienceSection';
 import { SectionHeader } from './SectionHeader';
@@ -65,15 +64,6 @@ export function Page() {
             </a>
           </li>
         </ul>
-        <div className="flex justify-end">
-          <a
-            href="/projects"
-            className="mt-6 sm:mt-10 text-neutral-100 hover:text-white font-medium px-6 sm:px-10 transition-all duration-300 flex gap-2 justify-end group items-center"
-          >
-            View All Projects
-            <RightArrow className="w-4 fill-white group-hover:fill-accent group-hover:translate-x-1 translate-y-[1px] transition-all duration-300"></RightArrow>
-          </a>
-        </div>
       </section>
 
       <ExperienceSection />

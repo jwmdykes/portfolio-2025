@@ -5,13 +5,6 @@ export function Links() {
   return (
     <>
       <a
-        href="/projects"
-        className="text-neutral-100 flex items-center gap-2 underline decoration-transparent underline-offset-2 hover:underline-offset-4 hover:decoration-white transition-all duration-300"
-        aria-label="Link To Projects Archive"
-      >
-        <span>Projects</span>
-      </a>
-      <a
         href="https://medium.com/@98johndykes"
         className="text-neutral-100 flex items-center gap-2 underline decoration-transparent underline-offset-2 hover:underline-offset-4 hover:decoration-white transition-all duration-300"
         aria-label="Link To Blog"
@@ -19,7 +12,7 @@ export function Links() {
         View Blog
       </a>
       <a
-        href="#"
+        href="Resume John Dykes.pdf"
         className="text-neutral-100 flex items-center gap-2 underline decoration-transparent underline-offset-2 hover:underline-offset-4 hover:decoration-white transition-all duration-300"
         aria-label="Link To Download Resume"
       >
