@@ -6,6 +6,7 @@ import {
   Postgres,
   PyTorch,
   ReactLogo,
+  Server,
   Tailwind,
 } from '../../components/Icons';
 import { SectionHeader } from './SectionHeader';
@@ -187,22 +188,28 @@ export function ToolsSection() {
               .
             </p>
           </div>
-          <div className="row-start-2 col-start-1 w-3/4 self-end justify-self-center transition-all duration-500">
+          <div className="row-start-2 col-start-1 h-4/5 self-end justify-self-center transition-all duration-500">
             <Brain className="w-full h-full fill-neutral-700 group-hover:stroke-transparent group-hover:drop-shadow-neutral-400 drop-shadow-transparent drop-shadow-xs transition-all duration-500"></Brain>
           </div>
         </div>
-        <div className="col-span-1 bg-neutral-800 rounded-2xl border border-neutral-700 px-5 py-7">
-          <h3 className="text-xl flex gap-2 items-center justify-start font-medium">
-            <Fastify className="w-7 fill-white stroke-none"></Fastify>
-            Fastify
-          </h3>
-          <p className="mt-4 text-base text-neutral-100 ">
-            My go-to backend framework
-          </p>
-          <p className="mt-1 text-sm text-neutral-400">
-            Serverless is great, but sometimes you need a real backend. I
-            default to Fastify.
-          </p>
+        <div className="col-span-1 bg-neutral-800 rounded-2xl border border-neutral-700 pt-7 flex flex-col justify-between overflow-hidden group">
+          <div className="px-5">
+            <h3 className="text-xl flex gap-2 items-center justify-start font-medium">
+              <Fastify className="w-7 fill-white stroke-none"></Fastify>
+              Fastify
+            </h3>
+            <p className="mt-4 text-base text-neutral-100 ">
+              My go-to backend framework
+            </p>
+            <p className="mt-1 text-sm text-neutral-400">
+              Serverless is great, but sometimes you need a real backend. I
+              default to Fastify.
+            </p>
+          </div>
+
+          <div className="flex justify-center items-center py-6">
+            <Server className="fill-neutral-700 w-3/4 group-hover:stroke-transparent group-hover:drop-shadow-neutral-400 drop-shadow-transparent drop-shadow-sm transition-all duration-500"></Server>
+          </div>
         </div>
       </div>
     </section>
