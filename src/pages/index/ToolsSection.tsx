@@ -12,7 +12,7 @@ import { SectionHeader } from './SectionHeader';
 
 function ReactGlowLogo() {
   return (
-    <ReactLogo className="row-start-1 col-start-1 sm:col-start-2 translate-x-1/2 sm:translate-x-0 justify-self-end sm:justify-self-center self-center h-11/12 fill-neutral-700 drop-shadow-transparent drop-shadow-sm group-hover:drop-shadow-neutral-400 transition-all duration-500"></ReactLogo>
+    <ReactLogo className="row-start-1 col-start-1 sm:col-start-2 translate-x-1/2 sm:translate-x-0 justify-self-end sm:justify-self-center self-center h-11/12 fill-neutral-700 drop-shadow-transparent drop-shadow-sm group-hover:drop-shadow-neutral-400 transition-all duration-500 animate-slowSpin"></ReactLogo>
   );
 }
 
@@ -63,7 +63,7 @@ export function ToolsSection() {
               <Postgres className="w-7 h-7 stroke-[1px]"></Postgres>
               PostgreSQL
             </h3>
-            <p className="mt-4 text-base text-neutral-100 ">
+            <p className="mt-4 text-base text-neutral-100">
               My SQL database of choice
             </p>
             <p className="mt-1 text-sm text-neutral-400">
@@ -71,17 +71,101 @@ export function ToolsSection() {
             </p>
           </div>
         </div>
-        <div className="col-span-1 bg-neutral-800 rounded-2xl border border-neutral-700 px-5 py-7">
-          <h3 className="text-xl flex gap-2 items-center justify-start font-medium">
-            <Tailwind className="w-6 fill-accent stroke-none"></Tailwind>
-            Tailwind CSS
-          </h3>
-          <p className="mt-4 text-base text-neutral-100 ">
-            Making everything look pretty
-          </p>
-          <p className="mt-1 text-sm text-neutral-400">
-            For my styling needs, I often reach for Tailwind over plain CSS.
-          </p>
+        <div className="overflow-hidden col-span-1 bg-neutral-800 rounded-2xl border border-neutral-700 pt-7 flex flex-col justify-between">
+          <div className="px-5">
+            <h3 className="text-xl flex gap-2 items-center justify-start font-medium">
+              <Tailwind className="w-6 fill-accent stroke-none"></Tailwind>
+              Tailwind CSS
+            </h3>
+            <p className="mt-4 text-base text-neutral-100">
+              Making everything look pretty
+            </p>
+            <p className="mt-1 text-sm text-neutral-400">
+              For my styling needs, I often reach for Tailwind over plain CSS.
+            </p>
+          </div>
+          <div className="text-2xl text-neutral-700 font-bold font-mono scale-105">
+            <div className="animate-scroll-3 whitespace-nowrap inline-block">
+              <p className="inline-block mr-2">
+                w-full md:w-auto inline-flex items-center justify-center px-6
+                py-3 border border-transparent text-base font-medium
+              </p>
+              <p className="inline-block">
+                w-full md:w-auto inline-flex items-center justify-center px-6
+                py-3 border border-transparent text-base font-medium
+              </p>
+            </div>
+            <div className="animate-scroll-5 whitespace-nowrap inline-block">
+              <p className="inline-block mr-2">
+                grid grid-rows-[auto_1fr] gap-y-6 grid-cols-1 col-span-1
+                bg-neutral-800 rounded-2xl border border-neutral-700 px-5 py-7
+                overflow-hidden group
+              </p>
+              <p className="inline-block">
+                grid grid-rows-[auto_1fr] gap-y-6 grid-cols-1 col-span-1
+                bg-neutral-800 rounded-2xl border border-neutral-700 px-5 py-7
+                overflow-hidden group
+              </p>
+            </div>
+            <div className="animate-scroll-2 whitespace-nowrap inline-block">
+              <p className="inline-block mr-2">
+                row-start-2 col-start-1 w-3/4 self-end justify-self-center
+                transition-all duration-500 mt-1 text-sm text-neutral-400
+              </p>
+              <p className="inline-block">
+                row-start-2 col-start-1 w-3/4 self-end justify-self-center
+                transition-all duration-500 mt-1 text-sm text-neutral-400
+              </p>
+            </div>
+            <div className="animate-scroll-6 whitespace-nowrap inline-block">
+              <p className="inline-block mr-2">
+                grid grid-rows-[auto_1fr] gap-y-6 grid-cols-1 col-span-1
+                bg-neutral-800 rounded-2xl border border-neutral-700 px-5 py-7
+                overflow-hidden group
+              </p>
+              <p className="inline-block">
+                grid grid-rows-[auto_1fr] gap-y-6 grid-cols-1 col-span-1
+                bg-neutral-800 rounded-2xl border border-neutral-700 px-5 py-7
+                overflow-hidden group
+              </p>
+            </div>
+            <div className="animate-scroll-3 whitespace-nowrap inline-block">
+              <p className="inline-block mr-2">
+                col-span-1 bg-neutral-800 rounded-2xl border border-neutral-700
+                px-5 py-7 mt-4 text-base text-neutral-100 w-7 fill-white
+                stroke-none
+              </p>
+              <p className="inline-block">
+                col-span-1 bg-neutral-800 rounded-2xl border border-neutral-700
+                px-5 py-7 mt-4 text-base text-neutral-100 w-7 fill-white
+                stroke-none
+              </p>
+            </div>
+            <div className="animate-scroll-1 whitespace-nowrap inline-block">
+              <p className="inline-block mr-2">
+                w-full h-full fill-neutral-700 group-hover:stroke-transparent
+                group-hover:drop-shadow-neutral-400 drop-shadow-transparent
+                drop-shadow-xs transition-all duration-500
+              </p>
+              <p className="inline-block">
+                w-full h-full fill-neutral-700 group-hover:stroke-transparent
+                group-hover:drop-shadow-neutral-400 drop-shadow-transparent
+                drop-shadow-xs transition-all duration-500
+              </p>
+            </div>
+            <div className="animate-scroll-3 whitespace-nowrap inline-block">
+              <p className="inline-block mr-2">
+                col-span-1 md:col-span-2 bg-neutral-800 aspect-video px-3
+                sm:px-5 py-5 sm:py-7 rounded-2xl border border-neutral-700 grid
+                grid-cols-1 sm:grid-cols-2 overflow-x-clip group
+              </p>
+              <p className="inline-block">
+                col-span-1 md:col-span-2 bg-neutral-800 aspect-video px-3
+                sm:px-5 py-5 sm:py-7 rounded-2xl border border-neutral-700 grid
+                grid-cols-1 sm:grid-cols-2 overflow-x-clip group
+              </p>
+            </div>
+          </div>
         </div>
         <div className="grid grid-rows-[auto_1fr] gap-y-6 grid-cols-1 col-span-1 bg-neutral-800 rounded-2xl border border-neutral-700 px-5 py-7 overflow-hidden group">
           <div className="row-start-1 col-start-1">
@@ -104,7 +188,7 @@ export function ToolsSection() {
             </p>
           </div>
           <div className="row-start-2 col-start-1 w-3/4 self-end justify-self-center transition-all duration-500">
-            <Brain className="w-full h-full fill-neutral-700 group-hover:stroke-transparent group-hover:drop-shadow-neutral-400 drop-shadow-transparent drop-shadow-sm transition-all duration-500"></Brain>
+            <Brain className="w-full h-full fill-neutral-700 group-hover:stroke-transparent group-hover:drop-shadow-neutral-400 drop-shadow-transparent drop-shadow-xs transition-all duration-500"></Brain>
           </div>
         </div>
         <div className="col-span-1 bg-neutral-800 rounded-2xl border border-neutral-700 px-5 py-7">

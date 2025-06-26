@@ -18,4 +18,30 @@
 
   --default-font-family: 'Inter';
   --default-mono-font-family: 'Space Mono';
+
+  --animate-scroll-1: scrollAround 20s linear infinite;
+  --animate-scroll-2: scrollAround 24s linear infinite;
+  --animate-scroll-3: scrollAround 28s linear infinite;
+  --animate-scroll-4: scrollAround 32s linear infinite;
+  --animate-scroll-5: scrollAround 36s linear infinite;
+  --animate-scroll-6: scrollAround 40s linear infinite;
+  --animate-slowSpin: spin 30s linear infinite;
+
+  @keyframes scrollAround {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 }
